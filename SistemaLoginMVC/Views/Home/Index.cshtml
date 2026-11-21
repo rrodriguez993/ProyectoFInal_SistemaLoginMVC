@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Panel Principal";
+}
+
+<div class="container mt-5">
+    <div class="p-5 bg-white rounded-3 shadow-sm border">
+        <h1 class="display-5 fw-bold text-primary">¡Bienvenido de nuevo, @User.Identity?.Name!</h1>
+        <p class="fs-5 text-secondary mt-3">
+            Has iniciado sesión correctamente. Esta vista está protegida y muestra dinámicamente el nombre asociado a tus credenciales en SQL Server.
+        </p>
+        <hr class="my-4" />
+        <a asp-controller="Acceso" asp-action="Logout" class="btn btn-danger btn-lg">
+            Cerrar Sesión
+        </a>
+    </div>
+</div>
